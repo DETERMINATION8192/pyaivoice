@@ -40,10 +40,10 @@ text = "この音声はファイルに保存されず、直接再生されます
 aivoice.synthesis(text, play=True)
 
 # --- 再生完了を待機する ---
-# play=Trueは非同期（ノンブロッキング）です。
+# play=Trueは非同期です。
 # スクリプトが再生完了を待つ必要がある場合は、wait()メソッドを使用します。
-text_to_wait = "この文章の再生が終わるまで待ちます。"
-aivoice.synthesis(text_to_wait, play=True)
+text = "この文章の再生が終わるまで待ちます。"
+aivoice.synthesis(text, play=True)
 print("再生を開始しました。完了を待ちます...")
 aivoice.wait()
 print("再生が完了しました。")
