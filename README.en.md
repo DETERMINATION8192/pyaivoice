@@ -20,8 +20,6 @@ pip install git+https://github.com/DETERMINATION8192/pyaivoice.git
 
 ## Quickstart
 
-## Quickstart
-
 ```python
 from pyaivoice import AIVoice, Style
 
