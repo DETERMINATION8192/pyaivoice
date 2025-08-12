@@ -97,7 +97,7 @@ def startup(main_func: Callable[Concatenate["AIVoice", P], R]) -> Callable[Conca
 
 class AIVoice():
     """A.I.VOICE Talk Editor APIを操作するためのメインクラス"""
-    def __init__(self, start_host: bool = False):
+    def __init__(self: "AIVoice", start_host: bool = False):
         """
         AIVoiceクラスのインスタンスを初期化します
 
@@ -115,13 +115,13 @@ class AIVoice():
 
     @property
     @startup
-    def version(self):
+    def version(self: "AIVoice"):
         """ホストプログラムのバージョンを取得します。"""
         return self._tts_control.Version
 
     @property
     @startup
-    def voices(self) -> dict[str, str]:
+    def voices(self: "AIVoice") -> dict[str, str]:
         """利用可能なすべてのボイスプリセットとボイス名のマッピングを取得します"""
         voice_names: tuple[str] = self._tts_control.VoiceNames
         return {
@@ -161,6 +161,16 @@ class AIVoice():
     def status(self: "AIVoice") -> HostStatus:
         """ホストプログラムの状態を取得します。"""
         return HostStatus(self._tts_control.Status)
+
+    @startup
+    def start(self: "AIVoice"):
+        """ホストプログラムを起動します"""
+        self._tts_control.StartHost()
+
+    @startup
+    def terminate(self: "AIVoice"):
+        """ホストプログラムを終了します"""
+        self._tts_control.TerminateHost()
 
     @startup
     def wait(self: "AIVoice"):
