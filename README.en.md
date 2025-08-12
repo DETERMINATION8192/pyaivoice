@@ -42,8 +42,8 @@ aivoice.synthesis(text, play=True)
 # --- Waiting for Playback to Finish ---
 # The play=True option is non-blocking.
 # If you need to wait for playback to complete before your script exits, use the wait() method.
-text_to_wait = "この文章の再生が終わるまで待ちます。"
-aivoice.synthesis(text_to_wait, play=True)
+text = "この文章の再生が終わるまで待ちます。"
+aivoice.synthesis(text, play=True)
 print("Playback started. Waiting for it to finish...")
 aivoice.wait()
 print("Playback finished.")
