@@ -157,17 +157,14 @@ class AIVoice():
         self._tts_control.MasterControl = json.dumps(asdict(master_contrl))
 
     @property
-    @startup
     def status(self: "AIVoice") -> HostStatus:
         """ホストプログラムの状態を取得します。"""
         return HostStatus(self._tts_control.Status)
 
-    @startup
     def start(self: "AIVoice"):
         """ホストプログラムを起動します"""
         self._tts_control.StartHost()
 
-    @startup
     def terminate(self: "AIVoice"):
         """ホストプログラムを終了します"""
         self._tts_control.TerminateHost()
