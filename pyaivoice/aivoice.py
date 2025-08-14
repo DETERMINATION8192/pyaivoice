@@ -44,7 +44,7 @@ class AIVoiceMergedVoiceContainer(TypedDict):
 class AIVoiceVoicePreset():
     """A.I.VOICEのボイスプリセット設定"""
     VoiceName: str  # VoiceNameだけは必須要素なので一番上に
-    PresetName: str = "python"
+    PresetName: str = "Python"
     Volume: float = 1.0
     Speed: float = 1.0
     Pitch: float = 1.0
