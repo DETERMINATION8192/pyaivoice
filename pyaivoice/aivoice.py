@@ -175,7 +175,7 @@ class AIVoice():
             time.sleep(0.01)
 
     @startup
-    def synthesis(
+    def synthesize(
         self: "AIVoice",
         text: str,
         voice: str = "",

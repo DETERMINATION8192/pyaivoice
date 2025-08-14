@@ -20,7 +20,7 @@ def main():
 
     # 変更後の設定で音声合成
     text_1 = "マスターコントロールを調整しました。少しゆっくり、小さく話します。"
-    aivoice.synthesis(text_1, path="./output_master_control.wav")
+    aivoice.synthesize(text_1, path="./output_master_control.wav")
     print("-> 変更後の音声 `output_master_control.wav` を保存しました。")
     # --- 3. マスターコントロールを元の設定に戻す ---
     print("\n[3] マスターコントロールを元の設定に戻します...")

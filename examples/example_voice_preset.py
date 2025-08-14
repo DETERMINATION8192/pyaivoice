@@ -34,7 +34,7 @@ def main():
     text = "これは、詳細なパラメータを設定したカスタムプリセットのテストです。"
 
     # synthesisの引数に直接voice_presetを渡します
-    aivoice.synthesis(
+    aivoice.synthesize(
         text,
         voice_preset=custom_preset,
         path="./output_custom_preset.wav"

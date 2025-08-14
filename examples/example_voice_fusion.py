@@ -34,7 +34,7 @@ def main():
     text = "これは、ボイスフュージョンのテストです。二人の声を混ぜ合わせています。"
 
     # synthesisの引数にmerged_voice_containerを渡します
-    aivoice.synthesis(
+    aivoice.synthesize(
         text,
         merged_voice_container=fusion_setting,
         path="./output_voice_fusion.wav"

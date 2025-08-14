@@ -29,21 +29,21 @@ aivoice = AIVoice(start_host=True)
 
 # --- Basic Synthesis ---
 text = "こんにちは、世界。"
-aivoice.synthesis(text)
+aivoice.synthesize(text)
 
 # --- Synthesis with Emotion ---
 text = "感情を表現するのは、とっても楽しいな！"
-aivoice.synthesis(text, style=Style.JOY)
+aivoice.synthesize(text, style=Style.JOY)
 
 # --- Direct Playback ---
 text = "この音声はファイルに保存されず、直接再生されます。"
-aivoice.synthesis(text, play=True)
+aivoice.synthesize(text, play=True)
 
 # --- Waiting for Playback to Finish ---
 # The play=True option is non-blocking.
 # If you need to wait for playback to complete before your script exits, use the wait() method.
 text = "この文章の再生が終わるまで待ちます。"
-aivoice.synthesis(text, play=True)
+aivoice.synthesize(text, play=True)
 print("Playback started. Waiting for it to finish...")
 aivoice.wait()
 print("Playback finished.")
