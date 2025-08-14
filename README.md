@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A.I.VOICE Talk EditorをPythonからシンプルに操作するライブラリ
+A.I.VOICE Talk Editorを使ってPythonからシンプルに音声を合成するライブラリ
 
 ## Requirements
 

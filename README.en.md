@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A simple library to control A.I.VOICE Talk Editor from Python.
+A simple Python library for synthesizing speech with A.I.VOICE Talk Editor.
 
 ## Requirements
 
